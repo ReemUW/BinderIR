@@ -1,10 +1,10 @@
 FROM andrewosh/binder-base
 
-MAINTAINER ReemUW
+MAINTAINER Reem Almugbel <reem2@uw.edu>
 
 USER root
 
-# Customized using Jupyter Notebook R Stack
+# Customized using Jupyter Notebook R Stack https://github.com/jupyter/docker-stacks/tree/master/r-notebook
 
 
 # R pre-requisites
