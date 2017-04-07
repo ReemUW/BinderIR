@@ -1,3 +1,5 @@
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/reemuw/binderir)
+
 # Binder with IR kernel
 
 A Binder-compatibible repository that contains its own custom Dockerfile
