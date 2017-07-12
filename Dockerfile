@@ -34,9 +34,13 @@ RUN conda install --quiet --yes \
     'r-nycflights13=0.2*' \
     'r-caret=6.0*' \
     'r-rcurl=1.95*' \
-    'r-xml=3.98_1.5' \
     'r-crayon=1.3*' && conda clean -tipsy
- 
+    
+RUN echo "source('http://bioconductor.org/biocLite.R'); biocLite('limma')" | R --vanilla
+RUN echo "source('http://bioconductor.org/biocLite.R'); biocLite('AnnotationDbi')" | R --vanilla
+RUN echo "source('http://bioconductor.org/biocLite.R'); biocLite('samr')" | R --vanilla
+RUN echo "source('http://bioconductor.org/biocLite.R'); biocLite('hugene20stprobeset.db')" | R --vanilla
+RUN echo "source('http://bioconductor.org/biocLite.R'); biocLite('hgu133plus2.db')" | R --vanilla
 
 WORKDIR /home/jovyan
 ADD . /home/jovyan
