@@ -20,7 +20,6 @@ USER $NB_USER
 # R packages
 
 RUN conda config --add channels r
-
 RUN conda install --quiet --yes \
     'r-base=3.3.2' \
     'r-irkernel=0.7*' \
